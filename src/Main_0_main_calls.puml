@@ -1,0 +1,339 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "Main#main(String[])",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "Main",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_111612081 { 
+   	label=utils
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_2005667018 { 
+   	label=Siswa
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Siswa111612081XXXMemuat0[
+	label="+ Memuat()"
+	style=filled
+	fillcolor=white
+	tooltip="Siswa
+
+null"
+	fontcolor=darkgreen
+];
+
+Siswa111612081XXXSimpan0[
+	label="+ Simpan()"
+	style=filled
+	fillcolor=white
+	tooltip="Siswa
+
+null"
+	fontcolor=darkgreen
+];
+
+Siswa111612081XXXtambahSiswa924985979[
+	label="+ tambahSiswa()"
+	style=filled
+	fillcolor=white
+	tooltip="Siswa
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_2013965593 { 
+   	label=Data
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Data111612081XXXMemuat0[
+	label="+ Memuat()"
+	style=filled
+	fillcolor=white
+	tooltip="Data
+
+null"
+	fontcolor=darkgreen
+];
+
+Data111612081XXXSimpan0[
+	label="+ Simpan()"
+	style=filled
+	fillcolor=white
+	tooltip="Data
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_2014006214 { 
+   	label=Buku
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Buku111612081XXXKurangStok515322732[
+	label="+ KurangStok()"
+	style=filled
+	fillcolor=white
+	tooltip="Buku
+
+null"
+	fontcolor=darkgreen
+];
+
+Buku111612081XXXMemuat0[
+	label="+ Memuat()"
+	style=filled
+	fillcolor=white
+	tooltip="Buku
+
+null"
+	fontcolor=darkgreen
+];
+
+Buku111612081XXXSimpan0[
+	label="+ Simpan()"
+	style=filled
+	fillcolor=white
+	tooltip="Buku
+
+null"
+	fontcolor=darkgreen
+];
+
+Buku111612081XXXTambahBuku477497297[
+	label="+ TambahBuku()"
+	style=filled
+	fillcolor=white
+	tooltip="Buku
+
+null"
+	fontcolor=darkgreen
+];
+
+Buku111612081XXXTambahStok515322732[
+	label="+ TambahStok()"
+	style=filled
+	fillcolor=white
+	tooltip="Buku
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_524500870 { 
+   	label=Petugas
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Petugas111612081XXXMemuat0[
+	label="+ Memuat()"
+	style=filled
+	fillcolor=white
+	tooltip="Petugas
+
+null"
+	fontcolor=darkgreen
+];
+
+Petugas111612081XXXSimpan0[
+	label="+ Simpan()"
+	style=filled
+	fillcolor=white
+	tooltip="Petugas
+
+null"
+	fontcolor=darkgreen
+];
+
+Petugas111612081XXXtambahPetugas924985979[
+	label="+ tambahPetugas()"
+	style=filled
+	fillcolor=white
+	tooltip="Petugas
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_852197341 { 
+   	label=Peminjaman
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Peminjaman111612081XXXKembalikanBuku104431[
+	label="+ KembalikanBuku()"
+	style=filled
+	fillcolor=white
+	tooltip="Peminjaman
+
+null"
+	fontcolor=darkgreen
+];
+
+Peminjaman111612081XXXMemuat0[
+	label="+ Memuat()"
+	style=filled
+	fillcolor=white
+	tooltip="Peminjaman
+
+null"
+	fontcolor=darkgreen
+];
+
+Peminjaman111612081XXXSimpan0[
+	label="+ Simpan()"
+	style=filled
+	fillcolor=white
+	tooltip="Peminjaman
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_2390489 { 
+   	label=Main
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1706522830 { 
+   	label=Main
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Main2390489XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="Main
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+} 
+
+'edges    
+Buku111612081XXXTambahStok515322732 -> Buku111612081XXXSimpan0;
+Data111612081XXXMemuat0 -> Buku111612081XXXMemuat0;
+Data111612081XXXMemuat0 -> Peminjaman111612081XXXMemuat0;
+Data111612081XXXMemuat0 -> Petugas111612081XXXMemuat0;
+Data111612081XXXMemuat0 -> Siswa111612081XXXMemuat0;
+Data111612081XXXSimpan0 -> Buku111612081XXXSimpan0;
+Data111612081XXXSimpan0 -> Peminjaman111612081XXXSimpan0;
+Data111612081XXXSimpan0 -> Petugas111612081XXXSimpan0;
+Data111612081XXXSimpan0 -> Siswa111612081XXXSimpan0;
+Main2390489XXXmain1859653459 -> Buku111612081XXXKurangStok515322732;
+Main2390489XXXmain1859653459 -> Buku111612081XXXSimpan0;
+Main2390489XXXmain1859653459 -> Buku111612081XXXTambahBuku477497297;
+Main2390489XXXmain1859653459 -> Data111612081XXXMemuat0;
+Main2390489XXXmain1859653459 -> Data111612081XXXSimpan0;
+Main2390489XXXmain1859653459 -> Peminjaman111612081XXXKembalikanBuku104431;
+Main2390489XXXmain1859653459 -> Peminjaman111612081XXXSimpan0;
+Main2390489XXXmain1859653459 -> Petugas111612081XXXSimpan0;
+Main2390489XXXmain1859653459 -> Petugas111612081XXXtambahPetugas924985979;
+Main2390489XXXmain1859653459 -> Siswa111612081XXXSimpan0;
+Main2390489XXXmain1859653459 -> Siswa111612081XXXtambahSiswa924985979;
+Peminjaman111612081XXXKembalikanBuku104431 -> Buku111612081XXXTambahStok515322732;
+Peminjaman111612081XXXKembalikanBuku104431 -> Peminjaman111612081XXXSimpan0;
+    
+}
+@enduml
